@@ -1,4 +1,3 @@
-import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
 export const metadata = {
@@ -15,9 +14,6 @@ export default function IntroductionPage() {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               A Smart Wheelchair Solution for Improving Safety and Mobility of Persons with Disabilities
             </h1>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Title  
-            </p>
           </div>
         </div>
       </section>
