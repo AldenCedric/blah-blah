@@ -1,186 +1,68 @@
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Smartphone, Satellite, Activity } from 'lucide-react'
 
 export const metadata = {
-  title: 'About SmartWheel - GPS Wheelchair System',
-  description: 'Learn about the SmartWheel wheelchair system, combining GPS tracking, voice control, and health monitoring',
+  title: 'Introduction',
 }
 
-export default function AboutPage() {
-  const technologies = [
-    {
-      icon: Satellite,
-      name: 'GPS Tracking',
-      description: 'Real-time location monitoring with precision accuracy. The integrated GPS module provides continuous location updates, enabling both personal navigation and emergency tracking for caregivers and family members.',
-    },
-    {
-      icon: Smartphone,
-      name: 'Voice Control',
-      description: 'Advanced voice recognition system for hands-free operation. Users can control wheelchair movement, access information, and make calls entirely through natural voice commands, maximizing independence.',
-    },
-    {
-      icon: Activity,
-      name: 'Health Sensors',
-      description: 'Integrated health monitoring with wearable sensors. Continuous tracking of vital signs including heart rate, temperature, and activity levels provides comprehensive health insights and alerts.',
-    },
-  ]
-
+export default function IntroductionPage() {
   return (
     <div className="w-full">
-      {/* Introduction Section */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-blue-600">About Us</Badge>
+            <Badge className="mb-4 bg-blue-600">Title</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Revolutionizing Mobility with Smart Technology
+              A Smart Wheelchair Solution for Improving Safety and Mobility of Persons with Disabilities
             </h1>
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              SmartWheel represents a significant leap forward in wheelchair technology by seamlessly integrating three 
-              powerful systems into one cohesive solution. Our mission is to enhance independence, safety, and quality of 
-              life for wheelchair users through intelligent innovation.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              By combining GPS tracking, voice control, and health monitoring, we've created a platform that doesn't just 
-              move people physically—it empowers them to live more independently and securely.
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Title  
             </p>
           </div>
         </div>
       </section>
 
-      {/* Three Core Technologies Section */}
-      <section className="py-20 bg-white">
+      <section className="py-15 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center">
-            Three Technologies, One Solution
+            Introduction
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {technologies.map((tech) => {
-              const Icon = tech.icon
-              return (
-                <Card key={tech.name} className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <div className="p-4 bg-blue-100 rounded-lg w-fit mb-6">
-                    <Icon size={32} className="text-blue-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{tech.name}</h3>
+          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
+                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4"></h3>
                   <p className="text-gray-700 leading-relaxed">
-                    {tech.description}
+                    In healthcare settings, wheelchairs are essential resources that help patients move comfortably and safely within medical facilities. However, managing these assets can be challenging because wheelchairs may be misplaced, stolen, or poorly monitored. To address this issue, technologies such as Global Positioning System (GPS) tracking have been introduced. A GPS tracking wheelchair allows healthcare staff to monitor the wheelchair’s location in real time through satellite signals and a connected mobile application. Compared with traditional wheelchairs that rely only on manual monitoring, GPS-enabled wheelchairs improve asset management by helping caregivers quickly locate lost or misplaced equipment and ensure their availability for patients when needed.
                   </p>
-                </Card>
-              )
-            })}
+                </div>
           </div>
-        </div>
-      </section>
 
-      {/* Why SmartWheel Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Why Choose SmartWheel?
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Safety First</h3>
-              <p className="text-gray-700 leading-relaxed">
-                GPS tracking ensures you're never truly lost, and emergency contacts are just a voice command away. 
-                Real-time health monitoring alerts you to potential issues before they become serious.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Independence Enabled</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Voice control means you don't need to struggle with traditional controls. Navigate your world with 
-                confidence and freedom, without constant assistance.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Health Insights</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Continuous health monitoring provides valuable data about your wellness. Track trends and share reports 
-                with healthcare providers for better overall care.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Seamless Integration</h3>
-              <p className="text-gray-700 leading-relaxed">
-                All systems work together seamlessly. One device replaces the need for multiple gadgets, reducing 
-                complexity and increasing reliability.
-              </p>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
+                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4"></h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    While GPS technology focuses on tracking and management, voice-controlled wheelchair systems focus on mobility and user independence. Human speech is one of the most natural ways people communicate, and speech recognition technology allows spoken commands to be converted into signals that can control electronic devices. For individuals with severe physical disabilities, such as paralysis, operating a wheelchair manually or through traditional controls may be difficult. Compared with conventional wheelchairs, voice-controlled systems provide a more accessible solution by allowing users to move the wheelchair simply by speaking commands into a microphone, reducing the need for physical effort and giving users greater autonomy.
+                  </p>
+                </div>
           </div>
-        </div>
-      </section>
 
-      {/* Technology Comparison Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            How SmartWheel Compares
-          </h2>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left">
-              <thead>
-                <tr className="border-b-2 border-gray-200">
-                  <th className="px-4 py-4 font-bold text-gray-900">Feature</th>
-                  <th className="px-4 py-4 font-bold text-gray-900 text-center">Traditional Chair</th>
-                  <th className="px-4 py-4 font-bold text-gray-900 text-center">Smartphone Only</th>
-                  <th className="px-4 py-4 font-bold text-blue-600 text-center">SmartWheel</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-gray-200">
-                  <td className="px-4 py-4 text-gray-900 font-semibold">GPS Tracking</td>
-                  <td className="px-4 py-4 text-center text-gray-500">✗</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Separate Device</td>
-                  <td className="px-4 py-4 text-center text-blue-600 font-bold">✓ Integrated</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="px-4 py-4 text-gray-900 font-semibold">Voice Control</td>
-                  <td className="px-4 py-4 text-center text-gray-500">✗</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Limited</td>
-                  <td className="px-4 py-4 text-center text-blue-600 font-bold">✓ Full System</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="px-4 py-4 text-gray-900 font-semibold">Health Monitoring</td>
-                  <td className="px-4 py-4 text-center text-gray-500">✗</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Multiple Devices</td>
-                  <td className="px-4 py-4 text-center text-blue-600 font-bold">✓ Integrated</td>
-                </tr>
-                <tr className="border-b border-gray-200">
-                  <td className="px-4 py-4 text-gray-900 font-semibold">Hands-Free Operation</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Manual Only</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Partial</td>
-                  <td className="px-4 py-4 text-center text-blue-600 font-bold">✓ Complete</td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 text-gray-900 font-semibold">Emergency Support</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Limited</td>
-                  <td className="px-4 py-4 text-center text-gray-500">Manual Call</td>
-                  <td className="px-4 py-4 text-center text-blue-600 font-bold">✓ Automated</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
+                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4"></h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    In contrast to GPS tracking and voice-control systems, wearable sensors focus more on health monitoring rather than mobility or equipment management. Modern wearable technologies are capable of monitoring vital signs such as blood oxygen levels, breathing rate, and body temperature in real time. These sensors are designed to be flexible, accurate, and comfortable, and they can be integrated into devices such as smart watches, patches, or smart textiles. Compared with wheelchair-based technologies that primarily improve mobility and tracking, wearable sensors extend healthcare support by continuously collecting patient health data, which can assist medical professionals in monitoring conditions and detecting potential health problems early.
+                  </p>
+                </div>
           </div>
-        </div>
-      </section>
 
-      {/* Vision Statement Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Our Vision</h2>
-          <p className="text-xl leading-relaxed text-blue-50">
-            To create a world where wheelchair users enjoy the same freedom, independence, and access to 
-            technology that everyone deserves. SmartWheel is the first step toward a future where assistive 
-            technology is not just helpful—it's transformative.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
+                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4"></h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    In conclusion, although GPS tracking systems, voice-controlled wheelchairs, and wearable sensors serve different functions, they all contribute to improving healthcare services for individuals with disabilities. GPS technology enhances wheelchair management and prevents loss or misuse, voice-controlled systems improve mobility and independence for individuals with severe physical limitations, and wearable sensors enable continuous health monitoring. When compared together, these technologies demonstrate how modern innovations can address different aspects of healthcare asset management, patient mobility, and health monitoring ultimately contributing to better patient care and improved quality of life.
+                  </p>
+                </div>
+          </div>
         </div>
       </section>
     </div>

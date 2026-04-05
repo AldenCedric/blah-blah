@@ -3,29 +3,26 @@ import { Badge } from '@/components/ui/badge'
 import { Target, Compass, Lightbulb } from 'lucide-react'
 
 export const metadata = {
-  title: 'Vision, Mission & Purpose - SmartWheel',
-  description: 'Learn about SmartWheels vision, mission, and core purpose for advancing wheelchair technology',
+  title: 'Vision, Mission & Purpose',
 }
 
 export default function VisionPage() {
   return (
     <div className="w-full">
-      {/* Page Header */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-blue-600">Our Direction</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Vision, Mission & Purpose
+              Vision, Mission
             </h1>
             <p className="text-xl text-gray-700 leading-relaxed">
-              Understanding the core principles that drive SmartWheel's development and commitment to users.
+              References: World Health Organization. (2022). Assistive Technology. Cook, A. M., & Polgar, J. M. (2015). Assistive Technologies: Principles and Practice.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -39,23 +36,12 @@ export default function VisionPage() {
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Our vision is to create a world where advanced technology is seamlessly integrated into mobility 
-                  solutions, enabling wheelchair users to live with unprecedented independence, security, and dignity.
+                  We envision a world where moving around and staying connected doesn’t keep anyone from having chances. With assistive technologies, people with disabilities can move freely, monitor their health, and stay in touch with their families. Features like voice-controlled wheelchairs, GPS tracking, and health sensors make it possible to travel safely, keep track of well-being, and live more independently.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed">
-                  We envision a future where assistive devices are not limitations but gateways to opportunity. Where 
-                  a person's physical challenges do not define their access to the world, and where technology becomes 
-                  an invisible bridge connecting users to their communities.
+                  Through tools like these, individuals can navigate their surroundings with greater confidence and independence. Assistive technology can make everyday life easier by helping people move around safely, monitor their health, and live more comfortably, while also giving their families peace of mind.
                 </p>
-
-                <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
-                  <h3 className="font-bold text-gray-900 mb-2">Core Vision</h3>
-                  <p className="text-gray-700">
-                    {`"Technology that empowers, not restricts. A world where every wheelchair user experiences 
-                    the freedom they deserve."`}
-                  </p>
-                </div>
               </div>
             </div>
 
@@ -63,7 +49,6 @@ export default function VisionPage() {
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl h-96 flex items-center justify-center">
                 <div className="text-center">
                   <Lightbulb size={80} className="text-blue-600 mx-auto mb-4" />
-                  <p className="text-gray-900 font-semibold">Innovative Mobility</p>
                 </div>
               </div>
             </div>
@@ -71,7 +56,6 @@ export default function VisionPage() {
         </div>
       </section>
 
-      {/* Mission Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -79,7 +63,6 @@ export default function VisionPage() {
               <div className="bg-gradient-to-br from-indigo-100 to-blue-100 rounded-2xl h-96 flex items-center justify-center">
                 <div className="text-center">
                   <Compass size={80} className="text-indigo-600 mx-auto mb-4" />
-                  <p className="text-gray-900 font-semibold">Clear Direction</p>
                 </div>
               </div>
             </div>
@@ -94,42 +77,18 @@ export default function VisionPage() {
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Our mission is to develop and deploy advanced wheelchair systems that seamlessly integrate GPS 
-                  tracking, voice control, and health monitoring—delivering practical solutions that enhance safety, 
-                  independence, and quality of life.
+                  Our mission is to support and promote practical ICT-based assistive innovations that help reduce accessibility barriers for people with disabilities. This smart wheelchair concept shows how different technologies can be combined into one system to support mobility, safety, and overall well-being in everyday life.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed">
-                  We are committed to making SmartWheel accessible, affordable, and reliable. Every feature is 
-                  designed with the user in mind, tested rigorously, and continuously improved based on real-world 
-                  feedback and emerging technology.
+                 Voice automation helps people who have difficulty using their hands control the wheelchair more easily. GPS tracking adds an extra layer of safety by helping families know that their loved ones can move around more securely. Health sensors can also provide helpful information that supports comfort and personal well-being. As students, sharing ideas like this allows us to contribute to a more supportive and inclusive community where technology helps meet the different needs of individuals and makes daily life more accessible.
                 </p>
-
-                <div className="space-y-3">
-                  <div className="flex gap-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Develop cutting-edge assistive technology</span>
-                  </div>
-                  <div className="flex gap-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Ensure accessibility and affordability</span>
-                  </div>
-                  <div className="flex gap-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Support users with comprehensive documentation</span>
-                  </div>
-                  <div className="flex gap-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Foster a community of innovation and support</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Purpose Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -143,43 +102,16 @@ export default function VisionPage() {
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  The purpose of SmartWheel is multifaceted—to solve real problems, create genuine value, and 
-                  make a measurable difference in the lives of wheelchair users and their families.
+                  The purpose of this project is to raise awareness about the challenges faced by people with disabilities and how technology can help improve their daily lives. This project focuses on innovative tools such as wheelchair GPS trackers, voice-automated wheelchairs, and health sensors that can support safety, mobility, and independence. By understanding the experiences of people with disabilities, the project aims to promote empathy, inclusion, and equal opportunities. It also highlights how assistive technologies can make environments more accessible and help individuals live more independently.
                 </p>
 
-                <div className="space-y-4">
-                  <div className="bg-green-50 border border-green-200 p-4 rounded-lg">
-                    <h3 className="font-bold text-gray-900 mb-2">Safety & Security</h3>
-                    <p className="text-gray-700">
-                      GPS tracking and emergency features provide peace of mind for users and caregivers, 
-                      ensuring help is always available when needed.
-                    </p>
-                  </div>
+                <p className="text-gray-700 leading-relaxed">
+                  The central goal of the project is to develop and promote an assistive wheelchair system equipped with a GPS tracker, voice automation, and health sensors to improve the mobility, safety, and independence of individuals with disabilities. These technologies can help users move more easily, locate their position through GPS tracking, and control the wheelchair using voice commands. The integrated health sensors can also monitor basic health conditions, allowing caregivers or family members to respond quickly in case of emergencies.
+                </p>
 
-                  <div className="bg-blue-50 border border-blue-200 p-4 rounded-lg">
-                    <h3 className="font-bold text-gray-900 mb-2">Independence & Empowerment</h3>
-                    <p className="text-gray-700">
-                      Voice control and intelligent systems reduce dependence on external assistance, 
-                      enabling users to control their own mobility and lives.
-                    </p>
-                  </div>
-
-                  <div className="bg-purple-50 border border-purple-200 p-4 rounded-lg">
-                    <h3 className="font-bold text-gray-900 mb-2">Health & Wellness</h3>
-                    <p className="text-gray-700">
-                      Integrated health monitoring provides valuable insights and early warning systems, 
-                      enabling proactive health management and better outcomes.
-                    </p>
-                  </div>
-
-                  <div className="bg-orange-50 border border-orange-200 p-4 rounded-lg">
-                    <h3 className="font-bold text-gray-900 mb-2">Social Connection</h3>
-                    <p className="text-gray-700">
-                      By enhancing mobility and reducing barriers, SmartWheel helps users participate 
-                      more fully in community and social activities.
-                    </p>
-                  </div>
-                </div>
+                <p className="text-gray-700 leading-relaxed">
+                  This project is worth the time, effort, and support of our group and sponsors because assistive technologies can significantly improve the quality of life of people with disabilities. By combining mobility support with smart monitoring and tracking features, the project aims to provide a safer and more accessible solution for individuals who rely on wheelchairs (World Health Organization, 2022; Cook & Polgar, 2015).
+                </p>
               </div>
             </div>
 
@@ -187,65 +119,10 @@ export default function VisionPage() {
               <div className="bg-gradient-to-br from-green-100 to-teal-100 rounded-2xl h-96 flex items-center justify-center">
                 <div className="text-center">
                   <Target size={80} className="text-green-600 mx-auto mb-4" />
-                  <p className="text-gray-900 font-semibold">Clear Objectives</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Our Core Values
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="p-8 border-0 bg-white shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">User-Centric Design</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Every decision we make is guided by the needs and experiences of wheelchair users. We listen, 
-                learn, and iterate continuously.
-              </p>
-            </Card>
-
-            <Card className="p-8 border-0 bg-white shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Innovation & Excellence</h3>
-              <p className="text-gray-700 leading-relaxed">
-                We pursue cutting-edge technology and best practices, refusing to settle for good enough when 
-                we can deliver great.
-              </p>
-            </Card>
-
-            <Card className="p-8 border-0 bg-white shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Accessibility & Inclusivity</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Technology should be for everyone. We're committed to making SmartWheel accessible, affordable, 
-                and easy to use.
-              </p>
-            </Card>
-
-            <Card className="p-8 border-0 bg-white shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Integrity & Trust</h3>
-              <p className="text-gray-700 leading-relaxed">
-                We operate with transparency and honesty, respecting user privacy and delivering on our promises 
-                with dependable systems.
-              </p>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Join Our Mission</h2>
-          <p className="text-xl text-blue-50 mb-8">
-            We're building the future of mobility, and we'd love to have you be part of it. 
-            Learn more about SmartWheel and how we can help you or a loved one.
-          </p>
         </div>
       </section>
     </div>
