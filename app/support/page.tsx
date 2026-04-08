@@ -65,41 +65,41 @@ export default function SupportPage() {
 
   const prices = [
     {
-      title2: 'Wheelchair base',
-      description2: ' - 6,000',
+      item: 'Wheelchair base',
+      cost: ' - 6,000',
     },
     {
-      title2: 'GPS Module ',
-      description2: ' - 2,000',
+      item: 'GPS Module ',
+      cost: ' - 2,000',
     },
     {
-      title2: 'Heart Rate Sensor',
-      description2: ' - 3,000',
+      item: 'Heart Rate Sensor',
+      cost: ' - 3,000',
     },
     {
-      title2: 'Voice Recognition Module',
-      description2: ' - 2,500',
+      item: 'Voice Recognition Module',
+      cost: ' - 2,500',
     },
     {
-      title2: 'Microcontroller',
-      description2: ' - 1,500',
+      item: 'Microcontroller',
+      cost: ' - 1,500',
     },
     {
-      title2: 'Wires, connectors, installation materials, battery',
-      description2: ' - 10,000',
+      item: 'Wires, connectors, installation materials, battery',
+      cost: ' - 10,000',
     },
   ]
 
   const totalPrices = [
     {
-      title3: 'Total Estimated Budget',
-      description3: ' = 25,000',
+      totalItem: 'Total Estimated Budget',
+      totalCost: ' = 25,000',
     },
   ]
 
   return (
     <div className="w-full">
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="py-20 border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
             Support & Budget
@@ -113,34 +113,42 @@ export default function SupportPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">          
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-              Estimated Budget
-            </h1>
+            <div className="py-20 border-0 grid-cols-1 md:grid-cols-2 gap-8 justify-center">
+              {totalPrices.map((feature) => (
+                <Card key={feature.totalItem} className="p-8 border-0 bg-gradient-to-r from-green-50 to-green-50 hover:shadow-lg transition-shadow justify-self-center">
+                  <div className="mb-4">
+                    <h2 className="text-xl font-bold text-gray-900 mb-1">{feature.totalItem}</h2>
+                  </div>
+    
+                  <div className="space-y-3 border-t border-gray-200 pt-6">
+                    <p className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors">
+                    {feature.totalCost}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {prices.map((feature) => {
-              return (
-                <Card key={feature.title2} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title2}</h3>
-                  <p className="text-gray-700 leading-relaxed">{feature.description2}</p>
-                </Card>
-              )
-            })}
+          {prices.map((feature) => (
+              <Card key={feature.item} className="p-8 border-0 bg-gradient-to-r from-blue-50 to-indigo-50 hover:shadow-lg transition-shadow">
+                <div className="mb-4">
+                  <h2 className="text-xl font-bold text-gray-900 mb-1">{feature.item}</h2>
+                </div>
 
-            {totalPrices.map((feature) => {
-              return (
-                <Card key={feature.title3} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title3}</h3>
-                  <p className="text-gray-700 leading-relaxed">{feature.description3}</p>
-                </Card>
-              )
-            })}
+                <div className="space-y-3 border-t border-gray-200 pt-6">
+                  <p className="flex items-center gap-3 text-gray-700 hover:text-red-600 transition-colors">
+                  {feature.cost}
+                  </p>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="py-20 border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">

@@ -20,7 +20,7 @@ export default function PurposePage() {
   
   return (
     <div className="w-full">
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="py-20 border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -33,7 +33,7 @@ export default function PurposePage() {
         </div>
       </section>
 
-      <section className="py-20 bg-white">
+      <section className="py-20 border-0 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

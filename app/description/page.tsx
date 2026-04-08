@@ -25,7 +25,7 @@ export default function DescriptionPage() {
 
   return (
     <div className="w-full">
-      <section className="py-20 bg-white">
+      <section className="py-20 border-0 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
