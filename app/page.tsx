@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/badge'
+import { Card } from '@/components/ui/card'
 import { Compass, Lightbulb } from 'lucide-react'
 
 export const metadata = {
@@ -60,7 +61,9 @@ export default function Home() {
           </h2>
             {introductionStatements.map((feature) => {
               return (
-                <p className="text-gray-700 leading-relaxed">{feature.description1}</p>
+                <p className="text-gray-700 leading-relaxed">
+                  {feature.description1}
+                </p>
               )
             })}
           </div>
@@ -95,7 +98,9 @@ export default function Home() {
               <div className="space-y-6">
                 {visionStatements.map((feature) => {
                 return (
-                <p className="text-gray-700 leading-relaxed">{feature.description2}</p>
+                  <Card className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                    {feature.description2}
+                  </Card>
                 )
                 })}
               </div>
@@ -134,7 +139,9 @@ export default function Home() {
               <div className="space-y-6">
                 {missionStatements.map((feature) => {
                 return (
-                <p className="text-gray-700 leading-relaxed">{feature.description3}</p>
+                  <Card className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                    {feature.description3}
+                  </Card>
                 )
                 })}
               </div>
