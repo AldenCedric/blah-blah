@@ -2,10 +2,10 @@ import { Badge } from '@/components/ui/badge'
 import { Compass, Lightbulb } from 'lucide-react'
 
 export const metadata = {
-  title: 'Home',
+  title: 'Introduction',
 }
 
-export default function Home() {
+export default function IntroductionPage() {
   const introductionStatements = [
     {
       description1: 'In healthcare settings, wheelchairs are essential resources that help patients move comfortably and safely within medical facilities. However, managing these assets can be challenging because wheelchairs may be misplaced, stolen, or poorly monitored. To address this issue, technologies such as Global Positioning System (GPS) tracking have been introduced. A GPS tracking wheelchair allows healthcare staff to monitor the wheelchair’s location in real time through satellite signals and a connected mobile application. Compared with traditional wheelchairs that rely only on manual monitoring, GPS-enabled wheelchairs improve asset management by helping caregivers quickly locate lost or misplaced equipment and ensure their availability for patients when needed.',

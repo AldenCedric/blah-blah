@@ -9,26 +9,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'SmartWheel - Innovative GPS-Enabled Wheelchair System',
-  description: 'Discover the future of mobility with SmartWheel: GPS tracking, voice control, and health monitoring integrated into one advanced wheelchair system.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  title: 'ICT',
+  description: 'ICT'
 }
 
 export default function RootLayout({
@@ -38,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased flex flex-col min-h-screen bg-white">
+      <body className="font-segoe-ui antialiased flex flex-col min-h-screen bg-white">
         <Navbar />
         <main className="flex-grow">
           {children}

@@ -1,5 +1,4 @@
 import { Card } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Users } from 'lucide-react'
 
 export const metadata = {
@@ -7,7 +6,7 @@ export const metadata = {
 }
 
 export default function SupportPage() {
-  const supportFeatures = [
+  const contacts = [
     {
       icon: Users,
       title: 'Angelica GONZALES (Leader)',
@@ -55,101 +54,87 @@ export default function SupportPage() {
     },
   ]
 
-  const totalCost = 10000
+  const prices = [
+    {
+      title2: 'Wheelchair base',
+      description2: ' - 6,000',
+    },
+    {
+      title2: 'GPS Module ',
+      description2: ' - 2,000',
+    },
+    {
+      title2: 'Heart Rate Sensor',
+      description2: ' - 3,000',
+    },
+    {
+      title2: 'Voice Recognition Module',
+      description2: ' - 2,500',
+    },
+    {
+      title2: 'Microcontroller',
+      description2: ' - 1,500',
+    },
+    {
+      title2: 'Wires, connectors, installation materials, battery',
+      description2: ' - 10,000',
+    },
+  ]
+
+  const totalPrices = [
+    {
+      title3: 'Total Estimated Budget',
+      description3: ' = 25,000',
+    },
+  ]
 
   return (
     <div className="w-full">
-      {/* Page Header */}
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <Badge className="mb-4 bg-blue-600">Support & Budget</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Support
+              Support & Budget
             </h1>
             <p className="text-xl text-gray-700 leading-relaxed">
-
+              The project will rely on the development of a smart assistive wheelchair that will enhance the safety of individuals living with mobility disabilities. This smart assistive wheelchair will have the ability to track the location of the user through the use of the Global Positioning System, allowing the user to move around easily and safely. Additionally, the health sensors will enable the caregiver to track the health condition of the user, enabling them to access the patient’s location quickly in case of emergencies.
             </p>
           </div>
         </div>
       </section>
-      
-		  <section className="py-10 bg-white">
-			  <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-			    <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-					  <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-					    <h3 className="text-2xl font-bold text-gray-900 mb-4"></h3>
-					    <p className="text-gray-700 leading-relaxed">
-						    The project will rely on the development of a smart assistive wheelchair that will enhance the safety of individuals living with mobility disabilities. This smart assistive wheelchair will have the ability to track the location of the user through the use of the Global Positioning System, allowing the user to move around easily and safely. Additionally, the health sensors will enable the caregiver to track the health condition of the user, enabling them to access the patient’s location quickly in case of emergencies.
-					    </p>
-					  </div>
-			    </div>
-			  </div>
-		  </section>
 
-      <section className="bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-            Estimated budget:
-          </h2>
-
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <p className="text-gray-700 leading-relaxed">
-                    Wheelchai base - 6,000
-                  </p>
-                </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <p className="text-gray-700 leading-relaxed">
-                    GPS Module - 2,000
-                  </p>
-                </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <p className="text-gray-700 leading-relaxed">
-                    Heart Rate Sensor  - 3,000
-                  </p>
-                </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <p className="text-gray-700 leading-relaxed">
-                    Voice Recognition Module - 2,500
-                  </p>
-                </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <p className="text-gray-700 leading-relaxed">
-                    Microcontroller - 1,500
-                  </p>
-                </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <p className="text-gray-700 leading-relaxed">
-                    Wires, connectors, installation materials, battery  - 10,000
-                  </p>
-                </div>
-          </div>
-                    
-          <div className="flex flex-col sm:flex-row gap-4 mb-6 max-w-6xl mx-auto">
-                <div className="p-8 hover:shadow-lg transition-shadow border-0 bg-gradient-to-br from-gray-50 to-white">
-                  <h3 className="font-bold text-gray-700 leading-relaxed">
-                    Total Estimated Budget: 25,000
-                  </h3>
-                </div>
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">          
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+              Estimated Budget
+            </h2>
           </div>
 
-          
+          <div className="grid md:grid-cols-3 gap-8">
+            {prices.map((feature) => {
+              return (
+                <Card key={feature.title2} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title2}</h3>
+                  <p className="text-gray-700 leading-relaxed">{feature.description2}</p>
+                </Card>
+              )
+            })}
+
+            {totalPrices.map((feature) => {
+              return (
+                <Card key={feature.title3} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title3}</h3>
+                  <p className="text-gray-700 leading-relaxed">{feature.description3}</p>
+                </Card>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">          
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
               Contact Information
@@ -157,7 +142,7 @@ export default function SupportPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {supportFeatures.map((feature) => {
+            {contacts.map((feature) => {
               const Icon = feature.icon
               return (
                 <Card key={feature.title} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
