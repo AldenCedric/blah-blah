@@ -8,14 +8,14 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { href: '/about', label: 'Introduction' },
-    { href: '/vision', label: 'Vision, Mission & Purpose' },
-    { href: '/features', label: 'Description' },
+    { href: '/introduction', label: 'Introduction' },
+    { href: '/purpose', label: 'Purpose' },
+    { href: '/description', label: 'Description' },
     { href: '/support', label: 'Support' },
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav className="sticky top-0 z-50 bg-gray-900 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
@@ -24,7 +24,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium text-sm"
+                className="font-bold text-white mb-4 hover:text-blue-400 transition-colors"
               >
                 {link.label}
               </Link>
