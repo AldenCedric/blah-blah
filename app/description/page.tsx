@@ -25,7 +25,7 @@ export default function DescriptionPage() {
 
   return (
     <div className="w-full">
-      <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -35,7 +35,7 @@ export default function DescriptionPage() {
           <div className="grid md:grid-row-1 gap-8">
             {descriptionStatement.map((feature) => {
               return (
-                <Card className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
+                <Card key={feature.description1} className="p-8 border-0 bg-gradient-to-r from-blue-50 to-indigo-50 hover:shadow-lg transition-shadow">
                   <h3 className="text-gray-700 leading-relaxed">{feature.description1}</h3>
                 </Card>
               )

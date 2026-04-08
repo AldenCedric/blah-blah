@@ -17,6 +17,7 @@ export default function PurposePage() {
       description1: 'This project is worth the time, effort, and support of our group and sponsors because assistive technologies can significantly improve the quality of life of people with disabilities. By combining mobility support with smart monitoring and tracking features, the project aims to provide a safer and more accessible solution for individuals who rely on wheelchairs (World Health Organization, 2022; Cook & Polgar, 2015).',
     },
   ]
+  
   return (
     <div className="w-full">
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -40,14 +41,16 @@ export default function PurposePage() {
                 <div className="p-4 bg-green-100 rounded-lg">
                   <Target size={40} className="text-green-600" />
                 </div>
-                <h2 className="text-4xl font-bold text-gray-900">Vision</h2>
+                <h2 className="text-4xl font-bold text-gray-900">Purpose</h2>
               </div>
 
               <div className="space-y-6">
                 {descriptionStatement.map((feature) => {
                 return (
-                  <Card className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                  <Card key={feature.description1} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                    <p>
                     {feature.description1}
+                    </p>
                   </Card>
                 )
                 })}

@@ -56,9 +56,9 @@ export default function IntroductionPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-rows-2 gap-8">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          <h1 className="text-4xl font-bold text-gray-900 mb-12 text-center">
             Introduction
-          </h2>
+          </h1>
             {introductionStatements.map((feature) => {
               return (
                 <p className="text-gray-700 leading-relaxed">
@@ -75,7 +75,7 @@ export default function IntroductionPage() {
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-blue-600">Our Direction</Badge>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Vision, Mission
+            Mission, Vision
             </h1>
             <p className="text-xl text-gray-700 leading-relaxed">
               References: World Health Organization. (2022). Assistive Technology. Cook, A. M., & Polgar, J. M. (2015). Assistive Technologies: Principles and Practice.
@@ -85,38 +85,7 @@ export default function IntroductionPage() {
       </section>
 
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-4 bg-blue-100 rounded-lg">
-                  <Lightbulb size={40} className="text-blue-600" />
-                </div>
-                <h2 className="text-4xl font-bold text-gray-900">Vision</h2>
-              </div>
-
-              <div className="space-y-6">
-                {visionStatements.map((feature) => {
-                return (
-                  <Card className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
-                    {feature.description2}
-                  </Card>
-                )
-                })}
-              </div>
-            </div>
-
-            <div className="hidden md:block">
-              <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <Lightbulb size={80} className="text-blue-600 mx-auto mb-4" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="hidden md:block order-last md:order-first">
               <div className="bg-gradient-to-br from-indigo-100 to-blue-100 rounded-2xl h-96 flex items-center justify-center">
@@ -137,11 +106,46 @@ export default function IntroductionPage() {
               <div className="space-y-6">
                 {missionStatements.map((feature) => {
                 return (
-                  <Card className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                  <Card key={feature.description3} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                    <h3>
                     {feature.description3}
+                    </h3>
                   </Card>
                 )
                 })}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="p-4 bg-blue-100 rounded-lg">
+                  <Lightbulb size={40} className="text-blue-600" />
+                </div>
+                <h2 className="text-4xl font-bold text-gray-900">Vision</h2>
+              </div>
+
+              <div className="space-y-6">
+                {visionStatements.map((feature) => {
+                return (
+                  <Card key={feature.description2} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
+                    <h3>
+                    {feature.description2}
+                    </h3>
+                  </Card>
+                )
+                })}
+              </div>
+            </div>
+
+            <div className="hidden md:block">
+              <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl h-96 flex items-center justify-center">
+                <div className="text-center">
+                  <Lightbulb size={80} className="text-blue-600 mx-auto mb-4" />
+                </div>
               </div>
             </div>
           </div>

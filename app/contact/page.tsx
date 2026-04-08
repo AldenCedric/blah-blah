@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin } from 'lucide-react'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -285,11 +285,84 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+            Meet Our Team
+          </h2>
+          <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+            Dedicated professionals committed to advancing wheelchair technology and improving lives.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member) => (
+              <Card key={member.name} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
+                <div className="mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-white font-bold text-lg">
+                      {member.name.split(' ').map((n) => n[0]).join('')}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-blue-600 font-semibold text-sm mb-1">{member.role}</p>
+                  <p className="text-gray-600 text-sm mb-4">{member.specialty}</p>
+                </div>
+
+                <p className="text-gray-700 text-sm mb-6 leading-relaxed">{member.bio}</p>
+
+                <div className="space-y-3 border-t border-gray-200 pt-6">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Mail size={18} />
+                    <span className="text-sm break-all">{member.email}</span>
+                  </a>
+                  <a
+                    href={`tel:${member.phone.replace(/\D/g, '')}`}
+                    className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Phone size={18} />
+                    <span className="text-sm">{member.phone}</span>
+                  </a>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Additional Contact Info Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+            Other Ways to Connect
+          </h2>
 
-          <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="p-8 border-0 bg-white">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Business Hours</h3>
+              <div className="space-y-3 text-gray-700">
+                <div className="flex justify-between">
+                  <span>Monday - Friday</span>
+                  <span className="font-semibold">9:00 AM - 6:00 PM PST</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Saturday</span>
+                  <span className="font-semibold">10:00 AM - 4:00 PM PST</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sunday</span>
+                  <span className="font-semibold">Closed</span>
+                </div>
+                <div className="flex justify-between pt-4 border-t border-gray-200 text-red-600 font-semibold">
+                  <span>Emergency Support</span>
+                  <span>24/7 Available</span>
+                </div>
+              </div>
+            </Card>
+
             <Card className="p-8 border-0 bg-white">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Quick Links</h3>
               <div className="space-y-3">
@@ -307,8 +380,6 @@ export default function ContactPage() {
                 </a>
               </div>
             </Card>
-
-            
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import { Card } from '@/components/ui/card'
-import { Users } from 'lucide-react'
+import { Mail, Phone, Users } from 'lucide-react'
 
 export const metadata = {
   title: 'Support & Budget',
@@ -8,49 +8,58 @@ export const metadata = {
 export default function SupportPage() {
   const contacts = [
     {
-      icon: Users,
-      title: 'Angelica GONZALES (Leader)',
-      description: 'Contact Number: 09307285667 School Email: acgonzales6674val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Angelica GONZALES',
+      phoneNumber: '+63 930 728 5667',
+      email: 'acgonzales6674val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Caitlin Lyris PE LIM',
-      description: 'Contact Number: 09762229942 School Email: clpelim6895val@studejt.fatima.edu.ph',
+      icon1: Users,
+      name: 'Caitlin Lyris PE LIM',
+      phoneNumber: '+63 976 222 9942',
+      email: 'clpelim6895val@studejt.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Chloe DIAZ',
-      description: 'Contact Number: 09485942066 School Email: cndiaz6634val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Chloe DIAZ',
+      phoneNumber: '+63 948 594 2066',
+      email: 'cndiaz6634val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Louiesel Urmatan',
-      description: 'Contact Number: 09641830037 School Email: lpurmatan6560val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Louiesel Urmatan',
+      phoneNumber: '+63 964 183 0037',
+      email: 'lpurmatan6560val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Lovely Jane AGAM',
-      description: 'Contact Number:9245124598 School Email: lbagam6362val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Lovely Jane AGAM',
+      phoneNumber: '+63 924 512 4598',
+      email: 'lbagam6362val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Dhanilette Dollisin OCAMPO',
-      description: 'Contact Number:09603149160 School Email: ddocampo6567val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Dhanilette Dollisin OCAMPO',
+      phoneNumber: '+63 960 314 9160',
+      email: 'ddocampo6567val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Christian PAMINTUAN',
-      description: 'Contact Number: 09267589716 School Email: cypamintuan6259val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Christian PAMINTUAN',
+      phoneNumber: '+63 926 758 9716',
+      email: 'cypamintuan6259val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Howard AGUSTIN',
-      description: 'Contact Number: 09624326147 School Email: haagustin5505val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Howard AGUSTIN',
+      phoneNumber: '+63 962 432 6147',
+      email: 'haagustin5505val@student.fatima.edu.ph',
     },
     {
-      icon: Users,
-      title: 'Jejomar SALTARIN',
-      description: 'Contact Number: 09536917295 School Email: jtsaltarin6643val@student.fatima.edu.ph',
+      icon1: Users,
+      name: 'Jejomar SALTARIN',
+      phoneNumber: '+63 953 691 7295',
+      email: 'jtsaltarin6643val@student.fatima.edu.ph',
     },
   ]
 
@@ -92,23 +101,21 @@ export default function SupportPage() {
     <div className="w-full">
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Support & Budget
-            </h1>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              The project will rely on the development of a smart assistive wheelchair that will enhance the safety of individuals living with mobility disabilities. This smart assistive wheelchair will have the ability to track the location of the user through the use of the Global Positioning System, allowing the user to move around easily and safely. Additionally, the health sensors will enable the caregiver to track the health condition of the user, enabling them to access the patient’s location quickly in case of emergencies.
-            </p>
-          </div>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            Support & Budget
+          </h1>
+          <p className="text-xl text-gray-700 leading-relaxed">
+            The project will rely on the development of a smart assistive wheelchair that will enhance the safety of individuals living with mobility disabilities. This smart assistive wheelchair will have the ability to track the location of the user through the use of the Global Positioning System, allowing the user to move around easily and safely. Additionally, the health sensors will enable the caregiver to track the health condition of the user, enabling them to access the patient’s location quickly in case of emergencies.
+          </p>
         </div>
       </section>
 
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">          
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
               Estimated Budget
-            </h2>
+            </h1>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -134,26 +141,50 @@ export default function SupportPage() {
       </section>
 
       <section className="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">          
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-              Contact Information
-            </h2>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            Contact Information
+            </h1>
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {contacts.map((feature) => {
-              const Icon = feature.icon
-              return (
-                <Card key={feature.title} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
-                  <div className="p-4 bg-blue-100 rounded-lg w-fit mb-6">
-                    <Icon size={32} className="text-blue-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{feature.description}</p>
-                </Card>
-              )
-            })}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {contacts.map((member) => (
+              <Card key={member.name} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow">
+                <div className="mb-4">
+                
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full flex items-center justify-center mb-4">
+
+                <span className="text-white font-bold text-lg">
+                  {member.name.split(' ').map((n) => n[0]).join('')}
+                </span>
+
+                </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
+                </div>
+
+                <div className="space-y-3 border-t border-gray-200 pt-6">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Mail size={18} />
+                    <span className="text-sm break-all">{member.email}</span>
+                  </a>
+                  <a
+                    href={`tel:${member.phoneNumber.replace(/\D/g, '')}`}
+                    className="flex items-center gap-3 text-gray-700 hover:text-blue-600 transition-colors"
+                  >
+                    <Phone size={18} />
+                    <span className="text-sm">{member.phoneNumber}</span>
+                  </a>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
