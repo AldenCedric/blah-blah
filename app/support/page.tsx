@@ -94,8 +94,7 @@ export default function SupportPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="neon-title">Support and Budget</h1>
           <p className="neon-subtitle mt-4 max-w-4xl">
-            The project develops a smart assistive wheelchair with GPS and health sensing to improve safety and faster
-            emergency response for people with mobility disabilities.
+            
           </p>
         </div>
       </section>

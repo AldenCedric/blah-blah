@@ -32,7 +32,7 @@ export default function DescriptionPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="neon-title">Description</h1>
           <p className="neon-subtitle mt-4 max-w-3xl">
-            Detailed project overview of the integrated smart wheelchair system and monitoring capabilities.
+            
           </p>
         </div>
       </section>
