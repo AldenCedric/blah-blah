@@ -19,50 +19,39 @@ export default function PurposePage() {
   ]
   
   return (
-    <div className="w-full">
-      <section className="py-20 border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div className="page-shell">
+      <section className="section-panel alt-section-panel">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Purpose
-            </h1>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              References: World Health Organization. (2022). Assistive Technology. Cook, A. M., & Polgar, J. M. (2015). Assistive Technologies: Principles and Practice.
-            </p>
-          </div>
+          <h1 className="neon-title">Purpose</h1>
+          <p className="neon-subtitle mt-4 max-w-4xl">
+            References: World Health Organization. (2022). Assistive Technology. Cook, A. M., &amp; Polgar, J. M.
+            (2015). Assistive Technologies: Principles and Practice.
+          </p>
         </div>
       </section>
 
-      <section className="py-20 border-0 bg-white">
+      <section className="section-panel alt-section-panel">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-4 bg-green-100 rounded-lg">
-                  <Target size={40} className="text-green-600" />
+              <div className="flex items-center gap-3 mb-6">
+                <div className="rounded-lg p-3 bg-emerald-500/20 border border-emerald-400/40">
+                  <Target size={30} className="text-emerald-300" />
                 </div>
-                <h2 className="text-4xl font-bold text-gray-900">Purpose</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">Purpose</h2>
               </div>
 
               <div className="space-y-6">
-                {descriptionStatement.map((feature) => {
-                return (
-                  <Card key={feature.description1} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
-                    <p>
-                    {feature.description1}
-                    </p>
+                {descriptionStatement.map((feature) => (
+                  <Card key={feature.description1} className="neon-card p-7 leading-relaxed text-zinc-200">
+                    <p>{feature.description1}</p>
                   </Card>
-                )
-                })}
+                ))}
               </div>
             </div>
 
-            <div className="hidden md:block">
-              <div className="bg-gradient-to-br from-green-100 to-teal-100 rounded-2xl h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <Target size={80} className="text-green-600 mx-auto mb-4" />
-                </div>
-              </div>
+            <div className="neon-card h-64 md:h-full min-h-64 flex items-center justify-center">
+              <Target size={96} className="text-emerald-300" />
             </div>
           </div>
         </div>

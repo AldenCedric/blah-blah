@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { CursorGlow } from '@/components/CursorGlow'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -20,7 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-segoe-ui antialiased flex flex-col min-h-screen bg-white">
+      <body className="font-segoe-ui antialiased flex flex-col min-h-screen bg-[#07080d] text-zinc-100">
+        <CursorGlow />
         <Navbar />
         <main className="flex-grow">
           {children}

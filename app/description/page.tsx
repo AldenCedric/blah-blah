@@ -21,25 +21,30 @@ export default function DescriptionPage() {
     {
       description1: 'The wheelchair will also be equipped with a GPS tracking device and a health monitoring device. The GPS tracking device will enable the caregiver or the family of the user to track the user’s current location. The health monitoring device will enable the user to get data regarding the potential adverse heart health conditions. The wheelchair will send an SOS message with the current GPS position of the user to the caregiver or the family of the user in case the health monitoring device detects an abnormal heart rate or the heart rate has suddenly decreased.',
     },
+    {
+      description1: 'We can also apply the placement of a camera that will monitor the wheelchair in a specific place where the wheelchair is placed.',
+    },
   ]
 
   return (
-    <div className="w-full">
-      <section className="py-20 border-0 bg-white">
+    <div className="page-shell">
+      <section className="section-panel alt-section-panel">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Description
-            </h1>
-          </div>
-          <div className="grid md:grid-row-1 gap-8">
-            {descriptionStatement.map((feature) => {
-              return (
-                <Card key={feature.description1} className="p-8 border-0 bg-gradient-to-r from-blue-50 to-indigo-50 hover:shadow-lg transition-shadow">
-                  <h3 className="text-gray-700 leading-relaxed">{feature.description1}</h3>
-                </Card>
-              )
-            })}
+          <h1 className="neon-title">Description</h1>
+          <p className="neon-subtitle mt-4 max-w-3xl">
+            Detailed project overview of the integrated smart wheelchair system and monitoring capabilities.
+          </p>
+        </div>
+      </section>
+
+      <section className="section-panel alt-section-panel">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-6">
+            {descriptionStatement.map((feature) => (
+              <Card key={feature.description1} className="neon-card p-7 leading-relaxed text-zinc-200">
+                <p>{feature.description1}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>

@@ -41,112 +41,83 @@ export default function Home() {
   ]
 
   return (
-    <div className="w-full">
-      <section className="py-20 border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div className="page-shell">
+      <section className="section-panel alt-section-panel">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <Badge className="mb-4 bg-blue-600">Title</Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              A Smart Wheelchair Solution for Improving Safety and Mobility of Persons with Disabilities
-            </h1>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 border-0 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-rows-2 gap-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-            Introduction
+          <Badge className="neon-tag mb-4">Smart Wheelchair Project</Badge>
+          <h1 className="neon-title max-w-4xl">
+            A Smart Wheelchair Solution for Improving Safety and Mobility of Persons with Disabilities
           </h1>
-            {introductionStatements.map((feature) => {
-              return (
-                <p className="text-gray-700 leading-relaxed">
-                  {feature.description1}
-                </p>
-              )
-            })}
-          </div>
         </div>
       </section>
 
-      <section className="py-20 border-0 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <section className="section-panel alt-section-panel">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <Badge className="mb-4 bg-blue-600">Our Direction</Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Mission, Vision
-            </h1>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              References: World Health Organization. (2022). Assistive Technology. Cook, A. M., & Polgar, J. M. (2015). Assistive Technologies: Principles and Practice.
-            </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-10 text-center">Introduction</h2>
+          <div className="space-y-6">
+            {introductionStatements.map((feature) => (
+              <Card key={feature.description1} className="neon-card p-7 leading-relaxed text-zinc-200">
+                <p>{feature.description1}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 border-0 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="hidden md:block order-last md:order-first">
-              <div className="bg-gradient-to-br from-indigo-100 to-blue-100 rounded-2xl h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <Compass size={80} className="text-indigo-600 mx-auto mb-4" />
-                </div>
-              </div>
+      <section className="section-panel alt-section-panel">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Badge className="neon-tag mb-4">Our Direction</Badge>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Mission and Vision</h2>
+          <p className="text-zinc-300">
+            References: World Health Organization. (2022). Assistive Technology. Cook, A. M., &amp; Polgar, J. M.
+            (2015). Assistive Technologies: Principles and Practice.
+          </p>
+        </div>
+      </section>
+
+      <section className="section-panel alt-section-panel">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-14">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="neon-card h-64 flex items-center justify-center">
+              <Compass size={96} className="text-rose-400" />
             </div>
-
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-4 bg-indigo-100 rounded-lg">
-                  <Compass size={40} className="text-indigo-600" />
+              <div className="flex items-center gap-3 mb-6">
+                <div className="rounded-lg p-3 bg-rose-500/20 border border-rose-400/40">
+                  <Compass size={30} className="text-rose-300" />
                 </div>
-                <h2 className="text-4xl font-bold text-gray-900">Mission</h2>
+                <h3 className="text-3xl font-bold text-white">Mission</h3>
               </div>
-
-              <div className="space-y-6">
-                {missionStatements.map((feature) => {
-                return (
-                  <Card key={feature.description3} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
-                    <h3>
-                    {feature.description3}
-                    </h3>
+              <div className="space-y-5">
+                {missionStatements.map((feature) => (
+                  <Card key={feature.description3} className="neon-card p-6 leading-relaxed text-zinc-200">
+                    <p>{feature.description3}</p>
                   </Card>
-                )
-                })}
+                ))}
               </div>
             </div>
           </div>
         </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-start">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-4 bg-blue-100 rounded-lg">
-                  <Lightbulb size={40} className="text-blue-600" />
+              <div className="flex items-center gap-3 mb-6">
+                <div className="rounded-lg p-3 bg-fuchsia-500/20 border border-fuchsia-400/40">
+                  <Lightbulb size={30} className="text-fuchsia-300" />
                 </div>
-                <h2 className="text-4xl font-bold text-gray-900">Vision</h2>
+                <h3 className="text-3xl font-bold text-white">Vision</h3>
               </div>
-
-              <div className="space-y-6">
-                {visionStatements.map((feature) => {
-                return (
-                  <Card key={feature.description2} className="p-8 border-0 bg-gradient-to-br from-gray-50 to-white hover:shadow-lg transition-shadow leading-relaxed">
-                    <h3>
-                    {feature.description2}
-                    </h3>
+              <div className="space-y-5">
+                {visionStatements.map((feature) => (
+                  <Card key={feature.description2} className="neon-card p-6 leading-relaxed text-zinc-200">
+                    <p>{feature.description2}</p>
                   </Card>
-                )
-                })}
+                ))}
               </div>
             </div>
-
-            <div className="hidden md:block">
-              <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl h-96 flex items-center justify-center">
-                <div className="text-center">
-                  <Lightbulb size={80} className="text-blue-600 mx-auto mb-4" />
-                </div>
-              </div>
+            <div className="neon-card h-64 flex items-center justify-center">
+              <Lightbulb size={96} className="text-fuchsia-300" />
             </div>
           </div>
         </div>

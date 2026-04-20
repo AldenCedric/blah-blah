@@ -15,7 +15,7 @@ export function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 border-0 bg-gray-900 border-b border-gray-200">
+    <nav className="sticky top-0 z-50 border-b border-white/10 bg-transparent backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
 
@@ -24,7 +24,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-bold text-white mb-4 hover:text-blue-400 transition-colors"
+                className="font-bold text-zinc-100 hover:text-rose-300 transition-colors"
               >
                 {link.label}
               </Link>
@@ -32,7 +32,7 @@ export function Navbar() {
           </div>
 
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-zinc-100 hover:text-rose-300 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -41,12 +41,12 @@ export function Navbar() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden pb-4 space-y-2">
+          <div className="md:hidden mb-3 rounded-lg border border-white/10 bg-transparent p-2 backdrop-blur-sm">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                className="block rounded-lg px-4 py-2 text-zinc-200 hover:bg-white/5 hover:text-rose-300 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
